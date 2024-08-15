@@ -1,10 +1,10 @@
 <package format="2">
-  <name>eco656weili.sldasm</name>
+  <name>eco656weili</name>
   <version>1.0.0</version>
   <description>
-    <p>URDF Description package for eco656weili.sldasm</p>
+    <p>URDF Description package for eco65-2</p>
     <p>This package contains configuration data, 3D models and launch files
-for eco656weili.sldasm robot</p>
+for eco65-2 robot</p>
   </description>
   <author>TODO</author>
   <maintainer email="TODO@email.com" />

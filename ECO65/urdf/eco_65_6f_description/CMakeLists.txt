@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(eco656weili.sldasm)
+project(eco656weili)
 
 find_package(catkin REQUIRED)
 

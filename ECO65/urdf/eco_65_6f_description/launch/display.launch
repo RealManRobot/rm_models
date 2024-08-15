@@ -3,7 +3,7 @@
     name="model" />
   <param
     name="robot_description"
-    textfile="$(find eco656weili.sldasm)/urdf/eco656weili.sldasm.urdf" />
+    textfile="$(find eco656weili)/urdf/eco656weili.sldasm.urdf" />
   <node
     name="joint_state_publisher_gui"
     pkg="joint_state_publisher_gui"
@@ -16,5 +16,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find eco656weili.sldasm)/urdf.rviz" />
+    args="-d $(find eco656weili)/urdf.rviz" />
 </launch>
