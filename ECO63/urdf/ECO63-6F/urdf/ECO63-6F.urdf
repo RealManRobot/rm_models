@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ECO63-6F">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00020533 -8.2462E-05 0.042566"
+        rpy="0 0 0" />
+      <mass
+        value="1" />
+      <inertia
+        ixx="0.00082414"
+        ixy="-2.9336E-06"
+        ixz="2.8699E-05"
+        iyy="0.0008206"
+        iyz="-2.2123E-06"
+        izz="0.00068569" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ECO63-6F/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ECO63-6F/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="-0.0122 -0.0001 -0.0346"
+        rpy="0 0 0" />
+      <mass
+        value="1.6026" />
+      <inertia
+        ixx="0.0020078355"
+        ixy="-0.000043739"
+        ixz="-0.0006663696"
+        iyy="0.0033806191"
+        iyz="-0.0000114927"
+        izz="0.0025157844" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ECO63-6F/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ECO63-6F/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1625"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="3.106"
+      effort="60"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.1236 -0.0001 -0.0551"
+        rpy="0 0 0" />
+      <mass
+        value="2.8169" />
+      <inertia
+        ixx="0.0030513772"
+        ixy="-0.0000024724"
+        ixz="-0.0036915182"
+        iyy="0.059635782"
+        iyz="-0.0000047509"
+        izz="0.059632877" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ECO63-6F/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ECO63-6F/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="-0.086 0 0"
+      rpy="1.5708 -1.5708 3.1416" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="2.356"
+      effort="60"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.1603 -0.0001 0.0054"
+        rpy="0 0 0" />
+      <mass
+        value="2.6857" />
+      <inertia
+        ixx="0.0029686196"
+        ixy="-0.0000071564"
+        ixz="-0.003498838"
+        iyy="0.0669637576"
+        iyz="-0.0000078642"
+        izz="0.066058064" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ECO63-6F/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ECO63-6F/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0.41 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.932"
+      upper="2.7576"
+      effort="30"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="0 -0.0359 0.0037"
+        rpy="0 0 0" />
+      <mass
+        value="0.625" />
+      <inertia
+        ixx="0.0005456336"
+        ixy="-0.000000119"
+        ixz="-0.0000001203"
+        iyy="0.0003173345"
+        iyz="-0.0000813961"
+        izz="0.0005169693" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ECO63-6F/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ECO63-6F/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="0.38 0 -0.058899"
+      rpy="0 0 1.5708" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="3.106"
+      effort="10"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="0 0.0246 -0.0066"
+        rpy="0 0 0" />
+      <mass
+        value="0.6743" />
+      <inertia
+        ixx="0.0006850659"
+        ixy="-0.0000005787"
+        ixz="-0.0000000103"
+        iyy="0.0003873373"
+        iyz="-0.0001135208"
+        izz="0.0006178918" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ECO63-6F/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ECO63-6F/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="0 -0.11 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="3.106"
+      effort="10"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="0.001 0 -0.0101"
+        rpy="0 0 0" />
+      <mass
+        value="0.248" />
+      <inertia
+        ixx="0.0000441232"
+        ixy="-0.0000000636"
+        ixz="-0.0000002997"
+        iyy="0.0000350778"
+        iyz="-0.0000000289"
+        izz="0.0000654409" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ECO63-6F/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ECO63-6F/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="revolute">
+    <origin
+      xyz="0 0.108 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.28"
+      upper="6.28"
+      effort="10"
+      velocity="3.14" />
+  </joint>
+</robot>

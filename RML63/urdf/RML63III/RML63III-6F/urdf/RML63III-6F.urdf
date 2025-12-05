@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="RML63III-6F">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00020481 -8.2366E-05 0.043092"
+        rpy="0 0 0" />
+      <mass
+        value="1.1" />
+      <inertia
+        ixx="0.00082415"
+        ixy="-2.9296E-06"
+        ixz="2.8721E-05"
+        iyy="0.00082056"
+        iyz="-2.2126E-06"
+        izz="0.00068567" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RML63III-6F/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RML63III-6F/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="-0.0129 0.0001 -0.0298"
+        rpy="0 0 0" />
+      <mass
+        value="1.5979" />
+      <inertia
+        ixx="0.0017312851"
+        ixy="-0.0000201865"
+        ixz="0.0006018106"
+        iyy="0.0031817492"
+        iyz="0.0000016777"
+        izz="0.0025668855" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RML63III-6F/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RML63III-6F/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1625"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="3.106"
+      effort="60"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.1098 0.0001 -0.0672"
+        rpy="0 0 0" />
+      <mass
+        value="2.9903" />
+      <inertia
+        ixx="0.0032215462"
+        ixy="0.0000006897"
+        ixz="0.0040170668"
+        iyy="0.0532159255"
+        iyz="0.0000012973"
+        izz="0.0524195464" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RML63III-6F/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RML63III-6F/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="-0.086 0 0"
+      rpy="1.5708 -1.5708 3.1416" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="3.106"
+      effort="60"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.0144 -0.0056 -0.0294"
+        rpy="0 0 0" />
+      <mass
+        value="1.357" />
+      <inertia
+        ixx="0.0019004631"
+        ixy="0.0003993072"
+        ixz="-0.0005755251"
+        iyy="0.0026290758"
+        iyz="0.0002275281"
+        izz="0.0021313348" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RML63III-6F/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RML63III-6F/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0.38 0 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="2.5307"
+      effort="30"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-0.0001 -0.023 0.2362"
+        rpy="0 0 0" />
+      <mass
+        value="1.8636" />
+      <inertia
+        ixx="0.0233659749"
+        ixy="-0.0000002808"
+        ixz="-0.000011416"
+        iyy="0.0219583225"
+        iyz="0.0054859936"
+        izz="0.0026979008" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RML63III-6F/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RML63III-6F/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="0.069 -0.405 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="3.106"
+      effort="30"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="0.0001 0.0326 -0.0152"
+        rpy="0 0 0" />
+      <mass
+        value="1.0227" />
+      <inertia
+        ixx="0.0019750111"
+        ixy="0.0000021684"
+        ixz="-0.0000014555"
+        iyy="0.0007714019"
+        iyz="-0.0005071366"
+        izz="0.0016577729" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RML63III-6F/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RML63III-6F/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.106"
+      upper="3.106"
+      effort="10"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="-0.0005 0 -0.0101"
+        rpy="0 0 0" />
+      <mass
+        value="0.248" />
+      <inertia
+        ixx="0.0000427569"
+        ixy="-0.0000000681"
+        ixz="-0.0000001774"
+        iyy="0.0000353575"
+        iyz="0.0000000298"
+        izz="0.0000639583" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RML63III-6F/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RML63III-6F/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="revolute">
+    <origin
+      xyz="0 0.1436 0"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.28"
+      upper="6.28"
+      effort="10"
+      velocity="3.14" />
+  </joint>
+</robot>
