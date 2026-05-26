@@ -3,22 +3,22 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="RXR-6F-C3">
+  name="RXL-6F-C3">
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="0.000247231299312718 0.000107089054159845 0.0504743485121995"
+        xyz="3.53515085054106E-05 -0.000344112995119752 0.0504743485122056"
         rpy="0 0 0" />
       <mass
-        value="0.651913537431184" />
+        value="0.651913537431336" />
       <inertia
-        ixx="0.000693039456720002"
-        ixy="-3.66140304381868E-07"
-        ixz="6.39371684073924E-06"
-        iyy="0.000684040868837464"
-        iyz="2.26157110425163E-06"
-        izz="0.00072711512418086" />
+        ixx="0.000695985861740904"
+        ixy="2.0688102027219E-06"
+        ixz="2.11905962706114E-06"
+        iyy="0.00068109446381714"
+        iyz="-6.83989723679503E-06"
+        izz="0.000727115124181003" />
     </inertial>
     <visual>
       <origin
@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/base_link.STL" />
+          filename="package://RXL-6F-C3/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/base_link.STL" />
+          filename="package://RXL-6F-C3/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -48,17 +48,17 @@
     name="Link1">
     <inertial>
       <origin
-        xyz="0.000281933525441178 0.0173244767243729 -0.0192845208683138"
+        xyz="0.488E-3 -13.727E-3 -10.765E-3"
         rpy="0 0 0" />
       <mass
-        value="0.851539173063523" />
+        value="1.559" />
       <inertia
-        ixx="0.00161711732486907"
-        ixy="-8.738491302599E-06"
-        ixz="-6.62994047326204E-06"
-        iyy="0.00155955306286215"
-        iyz="-0.000296910960072184"
-        izz="0.000931175547858567" />
+        ixx="2661.9E-6"
+        ixy="-31.029E-6"
+        ixz="9.34E-6"
+        iyy="2302.5E-6"
+        iyz="151.466E-6"
+        izz="1676359E-6" />
     </inertial>
     <visual>
       <origin
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/Link1.STL" />
+          filename="package://RXL-6F-C3/meshes/Link1.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/Link1.STL" />
+          filename="package://RXL-6F-C3/meshes/Link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -88,35 +88,35 @@
     name="J1"
     type="revolute">
     <origin
-      xyz="0 0 0.1915"
+      xyz="0 0 0.191500058118611"
       rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="Link1" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
     <limit
-      lower="-0.785"
-      upper="3.1"
+      lower="-3.0194"
+      upper="3.0194"
       effort="60"
       velocity="3.14" />
   </joint>
   <link
-    name="Link2">
+    name="Link2L">
     <inertial>
       <origin
-        xyz="-2.73172459106519E-05 -0.121926317437725 -0.00739063342323247"
+        xyz="-0.112E-3 -148.134E-3 4.111E-3"
         rpy="0 0 0" />
       <mass
-        value="0.870077468044854" />
+        value="1.394" />
       <inertia
-        ixx="0.00342255931533038"
-        ixy="7.93800998762221E-07"
-        ixz="-6.06759992768346E-07"
-        iyy="0.000757976931219347"
-        iyz="0.000471474703819665"
-        izz="0.00341079818844059" />
+        ixx="6927.3E-6"
+        ixy="0"
+        ixz="-2.6E-6"
+        iyy="1045E-6"
+        iyz="-801E-6"
+        izz="6864E-6" />
     </inertial>
     <visual>
       <origin
@@ -124,7 +124,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/Link2.STL" />
+          filename="package://RXL-6F-C3/meshes/Link2L.STL" />
       </geometry>
       <material
         name="">
@@ -138,25 +138,25 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/Link2.STL" />
+          filename="package://RXL-6F-C3/meshes/Link2L.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="J2"
+    name="J2L"
     type="revolute">
     <origin
       xyz="0 0 0"
-      rpy="1.57079632679489 -1.5707963267949 0" />
+      rpy="-1.57079632679489 -1.5707963267949 0" />
     <parent
       link="Link1" />
     <child
-      link="Link2" />
+      link="Link2L" />
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.524"
-      upper="3.11"
+      lower="-0.6109"
+      upper="3.1067"
       effort="60"
       velocity="3.14" />
   </joint>
@@ -164,17 +164,17 @@
     name="Link3">
     <inertial>
       <origin
-        xyz="0.000213964722240951 -0.0189545043784094 -0.022015443602875"
+        xyz="0.032E-3 15.649E-3 -11.225E-3"
         rpy="0 0 0" />
       <mass
-        value="0.593225765910811" />
+        value="1.117" />
       <inertia
-        ixx="0.000986910219936935"
-        ixy="5.83211562548264E-06"
-        ixz="-3.9575920904315E-06"
-        iyy="0.000924038544009075"
-        iyz="0.0001858435329204"
-        izz="0.000522838313490279" />
+        ixx="1757E-6"
+        ixy="0"
+        ixz="0"
+        iyy="1468E-6"
+        iyz="-112E-6"
+        izz="979E-6" />
     </inertial>
     <visual>
       <origin
@@ -182,7 +182,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/Link3.STL" />
+          filename="package://RXL-6F-C3/meshes/Link3.STL" />
       </geometry>
       <material
         name="">
@@ -196,7 +196,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/Link3.STL" />
+          filename="package://RXL-6F-C3/meshes/Link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -205,16 +205,16 @@
     type="revolute">
     <origin
       xyz="0 -0.322 0"
-      rpy="1.5707963267949 1.5707963267949 0" />
+      rpy="1.5707963267949 -1.5707963267949 0" />
     <parent
-      link="Link2" />
+      link="Link2L" />
     <child
       link="Link3" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
     <limit
-      lower="-3.11"
-      upper="3.11"
+      lower="-3.0194"
+      upper="3.0194"
       effort="30"
       velocity="3.925" />
   </joint>
@@ -222,17 +222,17 @@
     name="Link4">
     <inertial>
       <origin
-        xyz="6.19021038946489E-08 0.0703615063659189 -0.00824597973884991"
+        xyz="-0.001E-3 85.449E-3 4.844E-3"
         rpy="0 0 0" />
       <mass
-        value="0.395483546755608" />
+        value="0.673" />
       <inertia
-        ixx="0.000610273049123785"
-        ixy="4.90906689225248E-09"
-        ixz="1.73152606932508E-09"
-        iyy="0.000225904935162193"
-        iyz="-0.000115001851717092"
-        izz="0.000613892038458269" />
+        ixx="1283E-6"
+        ixy="0"
+        ixz="0"
+        iyy="344E-6"
+        iyz="229E-6"
+        izz="1257E-6" />
     </inertial>
     <visual>
       <origin
@@ -240,12 +240,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/Link4.STL" />
+          filename="package://RXL-6F-C3/meshes/Link4.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.925490196078431 0.925490196078431 0.905882352941176 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -254,7 +254,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/Link4.STL" />
+          filename="package://RXL-6F-C3/meshes/Link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -271,8 +271,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-2.62"
-      upper="0"
+      lower="-2.2689"
+      upper="0.2618"
       effort="30"
       velocity="3.925" />
   </joint>
@@ -280,17 +280,17 @@
     name="Link5">
     <inertial>
       <origin
-        xyz="7.18600427908428E-07 0.0178397746184391 -0.0765177293014231"
+        xyz="-0.001E-3 -14.741E-3 -80.627E-3"
         rpy="0 0 0" />
       <mass
-        value="0.845201652493134" />
+        value="1.13" />
       <inertia
-        ixx="0.00155700921373504"
-        ixy="2.306624445362E-08"
-        ixz="3.12697028830017E-08"
-        iyy="0.0014111953094615"
-        iyz="-0.000269335055058286"
-        izz="0.000709555431204978" />
+        ixx="2343E-6"
+        ixy="0"
+        ixz="0"
+        iyy="1934E-6"
+        iyz="443E-6"
+        izz="1091E-6" />
     </inertial>
     <visual>
       <origin
@@ -298,7 +298,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/Link5.STL" />
+          filename="package://RXL-6F-C3/meshes/Link5.STL" />
       </geometry>
       <material
         name="">
@@ -312,7 +312,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/Link5.STL" />
+          filename="package://RXL-6F-C3/meshes/Link5.STL" />
       </geometry>
     </collision>
   </link>
@@ -327,10 +327,10 @@
     <child
       link="Link5" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
     <limit
-      lower="-3.11"
-      upper="3.11"
+      lower="-3.0194"
+      upper="3.0194"
       effort="10"
       velocity="3.925" />
   </joint>
@@ -338,17 +338,17 @@
     name="Link6">
     <inertial>
       <origin
-        xyz="0.0123315374763978 0.00135875853087547 -0.00645514633066693"
+        xyz="13.909E-3 -1.02E-3 3.245E-3"
         rpy="0 0 0" />
       <mass
-        value="0.280941853294711" />
+        value="0.559" />
       <inertia
-        ixx="0.000122186224957962"
-        ixy="-2.15955531399414E-06"
-        ixz="-8.22212756964352E-06"
-        iyy="0.000141920133270304"
-        iyz="-3.15815294288415E-06"
-        izz="0.000122120440173514" />
+        ixx="354E-6"
+        ixy="0"
+        ixz="27E-6"
+        iyy="288E-6"
+        iyz="0"
+        izz="312E-6" />
     </inertial>
     <visual>
       <origin
@@ -356,12 +356,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/Link6.STL" />
+          filename="package://RXL-6F-C3/meshes/Link6.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.156862745098039 0.156862745098039 0.156862745098039 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -370,7 +370,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/Link6.STL" />
+          filename="package://RXL-6F-C3/meshes/Link6.STL" />
       </geometry>
     </collision>
   </link>
@@ -379,7 +379,7 @@
     type="revolute">
     <origin
       xyz="0 0 0"
-      rpy="1.5707963267949 -1.5707963267949 0" />
+      rpy="1.5708 -1.5708 0" />
     <parent
       link="Link5" />
     <child
@@ -387,8 +387,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-1.13"
-      upper="1.13"
+      lower="-0.9599"
+      upper="0.9599"
       effort="10"
       velocity="3.925" />
   </joint>
@@ -396,17 +396,17 @@
     name="Link7">
     <inertial>
       <origin
-        xyz="-2.6977E-05 0.028994 0.012862"
+        xyz="20E-3 -71E-3 4.396E-3"
         rpy="0 0 0" />
       <mass
-        value="0.16371" />
+        value="0.483" />
       <inertia
-        ixx="0.00014555"
-        ixy="-3.9059E-08"
-        ixz="-2.1745E-08"
-        iyy="0.00010674"
-        iyz="4.0154E-05"
-        izz="0.00011051" />
+        ixx="810E-6"
+        ixy="154E-6"
+        ixz="41E-6"
+        iyy="1152E-6"
+        iyz="-133E-6"
+        izz="1640E-6" />
     </inertial>
     <visual>
       <origin
@@ -414,65 +414,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/Link7.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://RXR-6F-C3/meshes/Link7.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="J7"
-    type="revolute">
-    <origin
-      xyz="0.0155 0 0"
-      rpy="1.5708 1.5708 0" />
-    <parent
-      link="Link6" />
-    <child
-      link="Link7" />
-    <axis
-      xyz="0 0 -1" />
-    <limit
-      lower="-0.697"
-      upper="1.99"
-      effort="10"
-      velocity="3.925" />
-  </joint>
-  <link
-    name="Link8">
-    <inertial>
-      <origin
-        xyz="-0.000223514521197427 8.8364063149209E-05 -0.0171573985138971"
-        rpy="0 0 0" />
-      <mass
-        value="0.165822947667674" />
-      <inertia
-        ixx="4.88487469769568E-05"
-        ixy="-9.45914855106736E-08"
-        ixz="3.06193382564702E-07"
-        iyy="4.94605021339587E-05"
-        iyz="8.02677028548142E-09"
-        izz="7.69017076313119E-05" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://RXR-6F-C3/meshes/Link8.STL" />
+          filename="package://RXL-6F-C3/meshes/Link7.STL" />
       </geometry>
       <material
         name="">
@@ -486,22 +428,80 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6F-C3/meshes/Link8.STL" />
+          filename="package://RXL-6F-C3/meshes/Link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J7"
+    type="revolute">
+    <origin
+      xyz="0.0155 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="Link6" />
+    <child
+      link="Link7" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.9024"
+      upper="0.6109"
+      effort="10"
+      velocity="3.925" />
+  </joint>
+  <link
+    name="Link8">
+    <inertial>
+      <origin
+        xyz="-0.000 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL-6F-C3/meshes/Link8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL-6F-C3/meshes/Link8.STL" />
       </geometry>
     </collision>
   </link>
   <joint
     name="J8"
-    type="revolute">
+    type="fixed">
     <origin
-      xyz="0 0.0962 0"
-      rpy="-1.5708 0 0" />
+      xyz="0 -0.0962000041171294 0"
+      rpy="1.57079632679489 0 0" />
     <parent
       link="Link7" />
     <child
       link="Link8" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
     <limit
       lower="0"
       upper="0"
