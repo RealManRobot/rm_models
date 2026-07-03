@@ -3,21 +3,21 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="RXR-6FB-V">
+  name="RXR-B-V">
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="0.000247231299312832 0.000107089054159907 0.0504743485122055"
+        xyz="0.000247231299312832 0.000107089054159906 0.0504743485122055"
         rpy="0 0 0" />
       <mass
         value="0.651913537431336" />
       <inertia
         ixx="0.000693039456720291"
-        ixy="-3.66140304370255E-07"
+        ixy="-3.66140304370249E-07"
         ixz="6.39371684073528E-06"
         iyy="0.000684040868837749"
-        iyz="2.26157110424948E-06"
+        iyz="2.26157110424947E-06"
         izz="0.000727115124181002" />
     </inertial>
     <visual>
@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/base_link.STL" />
+          filename="package://RXR-B-V/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/base_link.STL" />
+          filename="package://RXR-B-V/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link1.STL" />
+          filename="package://RXR-B-V/meshes/Link1.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link1.STL" />
+          filename="package://RXR-B-V/meshes/Link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -124,12 +124,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link2.STL" />
+          filename="package://RXR-B-V/meshes/Link2.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.92549 0.92549 0.90588 1" />
+          rgba="0.925490196078431 0.925490196078431 0.905882352941176 1" />
       </material>
     </visual>
     <collision>
@@ -138,7 +138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link2.STL" />
+          filename="package://RXR-B-V/meshes/Link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -147,7 +147,7 @@
     type="revolute">
     <origin
       xyz="0 0 0"
-      rpy="-1.5708 -1.5708 0" />
+      rpy="-1.57079632679489 -1.5707963267949 0" />
     <parent
       link="Link1" />
     <child
@@ -182,7 +182,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link3.STL" />
+          filename="package://RXR-B-V/meshes/Link3.STL" />
       </geometry>
       <material
         name="">
@@ -196,7 +196,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link3.STL" />
+          filename="package://RXR-B-V/meshes/Link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -240,7 +240,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link4.STL" />
+          filename="package://RXR-B-V/meshes/Link4.STL" />
       </geometry>
       <material
         name="">
@@ -254,7 +254,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link4.STL" />
+          filename="package://RXR-B-V/meshes/Link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -298,7 +298,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link5.STL" />
+          filename="package://RXR-B-V/meshes/Link5.STL" />
       </geometry>
       <material
         name="">
@@ -312,7 +312,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link5.STL" />
+          filename="package://RXR-B-V/meshes/Link5.STL" />
       </geometry>
     </collision>
   </link>
@@ -356,7 +356,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link6.STL" />
+          filename="package://RXR-B-V/meshes/Link6.STL" />
       </geometry>
       <material
         name="">
@@ -370,7 +370,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link6.STL" />
+          filename="package://RXR-B-V/meshes/Link6.STL" />
       </geometry>
     </collision>
   </link>
@@ -414,7 +414,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link7.STL" />
+          filename="package://RXR-B-V/meshes/Link7.STL" />
       </geometry>
       <material
         name="">
@@ -428,7 +428,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link7.STL" />
+          filename="package://RXR-B-V/meshes/Link7.STL" />
       </geometry>
     </collision>
   </link>
@@ -454,17 +454,17 @@
     name="Link8">
     <inertial>
       <origin
-        xyz="-0.000223514521197399 8.83640631490895E-05 -0.0171573985138972"
+        xyz="0.000355386579085681 0.000115077998156597 -0.0100247300486764"
         rpy="0 0 0" />
       <mass
-        value="0.165822947667674" />
+        value="0.0696336896784392" />
       <inertia
-        ixx="4.8848746976957E-05"
-        ixy="-9.45914855107049E-08"
-        ixz="3.06193382564701E-07"
-        iyy="4.94605021339589E-05"
-        iyz="8.02677028552643E-09"
-        izz="7.69017076313119E-05" />
+        ixx="2.47096277269803E-05"
+        ixy="-4.38390714210277E-08"
+        ixz="7.61063188149251E-08"
+        iyy="2.55329053630509E-05"
+        iyz="1.97776800679182E-08"
+        izz="3.9975887825525E-05" />
     </inertial>
     <visual>
       <origin
@@ -472,7 +472,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link8.STL" />
+          filename="package://RXR-B-V/meshes/Link8.STL" />
       </geometry>
       <material
         name="">
@@ -486,7 +486,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://RXR-6FB-V/meshes/Link8.STL" />
+          filename="package://RXR-B-V/meshes/Link8.STL" />
       </geometry>
     </collision>
   </link>
@@ -494,7 +494,7 @@
     name="J8"
     type="fixed">
     <origin
-      xyz="0 0.119000004117148 0"
+      xyz="0.000150519230103591 0.101800004117148 0.00015051923068905"
       rpy="-1.5707963267949 0 0" />
     <parent
       link="Link7" />
