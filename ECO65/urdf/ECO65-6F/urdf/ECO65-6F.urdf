@@ -8,17 +8,17 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="0.0004101 -8.4575E-05 0.050471"
+        xyz="3.036E-03 -7.32E-04 3.5587E-02"
         rpy="0 0 0" />
       <mass
-        value="2" />
+        value="0.379" />
       <inertia
-        ixx="0.0011075"
-        ixy="-3.3776E-06"
-        ixz="2.5165E-05"
-        iyy="0.001109"
-        iyz="-1.7082E-06"
-        izz="0.00075402" />
+        ixx="5.29040E-04"
+        ixy="6.208E-06"
+        ixz="-4.2500E-05"
+        iyy="5.54542E-04"
+        iyz="7.765E-06"
+        izz="4.72967E-04" />
     </inertial>
     <visual>
       <origin
@@ -48,17 +48,17 @@
     name="link_1">
     <inertial>
       <origin
-        xyz="-1.105E-02 2.736E-05 -3.347E-02"
+        xyz="-1.1054685E-02 2.7361459E-05 -3.3472520E-02"
         rpy="0 0 0" />
       <mass
-        value="1.507" />
+        value="1.50782" />
       <inertia
-        ixx="1.958E-03"
-        ixy="-2.333E-05"
-        ixz="5.324E-04"
-        iyy="3.101E-03"
-        iyz="9.135E-06"
-        izz="2.427E-03" />
+        ixx="1.9588448E-03"
+        ixy="-2.3338144E-05"
+        ixz="5.3244189E-04"
+        iyy="3.1016399E-03"
+        iyz="9.1355063E-06"
+        izz="2.4257020E-03" />
     </inertial>
     <visual>
       <origin
@@ -97,25 +97,25 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-3.106"
-      upper="3.106"
+      lower="-3.106686"
+      upper="3.106686"
       effort="60"
-      velocity="3.14" />
+      velocity="3.141593" />
   </joint>
   <link
     name="link_2">
     <inertial>
       <origin
-        xyz="5.818E-02 -1.163E-05 -5.236E-02"
+        xyz="5.8181647E-02 -1.1635218E-05 -5.2364015E-02"
         rpy="0 0 0" />
       <mass
-        value="2.0227" />
+        value="2.0227481" />
       <inertia
-        ixx="2.274E-03"
-        ixy="-6.214E-06"
-        ixz="1.441559E-03"
-        iyy="1.731147E-02"
-        iyz="-2.9598E-06"
+        ixx="2.2746241E-03"
+        ixy="-6.2143530E-06"
+        ixz="1.4415590E-03"
+        iyy="1.7314748E-02"
+        iyz="-2.9598358E-06"
         izz="1.7225523E-02" />
     </inertial>
     <visual>
@@ -155,25 +155,25 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-3.106"
-      upper="2.356"
+      lower="-3.106686"
+      upper="2.356194"
       effort="60"
-      velocity="3.14" />
+      velocity="3.141593" />
   </joint>
   <link
     name="link_3">
     <inertial>
       <origin
-        xyz="9.2768E-02 -9.3866E-05 1.81E-03"
+        xyz="9.2760878E-02 -9.3866560E-05 1.8110492E-03"
         rpy="0 0 0" />
       <mass
-        value="1.8858" />
+        value="1.8858232" />
       <inertia
         ixx="1.9164989E-03"
-        ixy="-3.27E-06"
+        ixy="-3.2703137E-06"
         ixz="-1.6941203E-03"
         iyy="2.2483104E-02"
-        iyz="4.50616E-06"
+        iyz="4.5061602E-06"
         izz="2.1892837E-02" />
     </inertial>
     <visual>
@@ -213,26 +213,26 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-2.792"
-      upper="2.53"
+      lower="-2.792527"
+      upper="2.530727"
       effort="30"
-      velocity="3.14" />
+      velocity="3.926991" />
   </joint>
   <link
     name="link_4">
     <inertial>
       <origin
-        xyz="-4.028E-05 -3.496E-02 3.8015E-03"
+        xyz="-4.0285198E-05 -3.4960195E-02 3.8015259E-03"
         rpy="0 0 0" />
       <mass
-        value="0.57" />
+        value="0.57008114" />
       <inertia
-        ixx="4.97615E-04"
-        ixy="5.3887E-07"
-        ixz="7.046E-07"
-        iyy="3.2497E-04"
-        iyz="0"
-        izz="1.1634E-03" />
+        ixx="4.9761534E-04"
+        ixy="5.3587099E-07"
+        ixz="6.1730076E-07"
+        iyy="3.1673404E-04"
+        iyz="-7.5765883E-05"
+        izz="4.6658610E-04" />
     </inertial>
     <visual>
       <origin
@@ -271,23 +271,23 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-3.106"
-      upper="3.106"
+      lower="-3.106686"
+      upper="3.106686"
       effort="10"
-      velocity="3.14" />
+      velocity="3.926991" />
   </joint>
   <link
     name="link_5">
     <inertial>
       <origin
-        xyz="-3.97E-05 2.2647E-02 -7.365E-03"
+        xyz="-3.9717234E-05 2.2647240E-02 -7.3656528E-03"
         rpy="0 0 0" />
       <mass
-        value="0.641" />
+        value="0.64138580" />
       <inertia
         ixx="6.2339218E-04"
-        ixy="-5.31226E-07"
-        ixz="-5.61849E-07"
+        ixy="-5.3122653E-07"
+        ixz="-5.6184933E-07"
         iyy="3.9337546E-04"
         iyz="-1.1339817E-04"
         izz="5.5741485E-04" />
@@ -329,21 +329,21 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-3.106"
-      upper="3.106"
+      lower="-3.106686"
+      upper="3.106686"
       effort="10"
-      velocity="3.14" />
+      velocity="3.926991" />
   </joint>
   <link
     name="link_6">
     <inertial>
       <origin
-        xyz="4.478E-04 -2.134E-04 -1.033579E-02"
+        xyz="4.4783882E-04 -2.1347857E-04 -1.0335795E-02"
         rpy="0 0 0" />
       <mass
-        value="0.0857" />
+        value="0.085705209" />
       <inertia
-        ixx="3.302707E-05"
+        ixx="3.3027071E-05"
         ixy="-2.5421576E-06"
         ixz="1.0241783E-07"
         iyy="3.0206675E-05"
@@ -387,9 +387,9 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-6.28"
-      upper="6.28"
+      lower="-6.283185"
+      upper="6.283185"
       effort="10"
-      velocity="3.14" />
+      velocity="3.926991" />
   </joint>
 </robot>
