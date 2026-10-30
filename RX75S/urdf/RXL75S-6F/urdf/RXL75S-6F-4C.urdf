@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="RXL75S-6F-4C">
+  <link
+    name="l_baselink">
+    <inertial>
+      <origin
+        xyz="1.9E-05 -0.000117 0.062107"
+        rpy="0 0 0" />
+      <mass
+        value="1.233" />
+      <inertia
+        ixx="0.001156944"
+        ixy="-0.000000516"
+        ixz="0.000000179"
+        iyy="0.001149831"
+        iyz="-0.000006949"
+        izz="0.000883368" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_baselink.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_baselink.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="l_link1">
+    <inertial>
+      <origin
+        xyz="-0.000138 -0.000982 -0.012182"
+        rpy="0 0 0" />
+      <mass
+        value="1.821" />
+      <inertia
+        ixx="0.003045204"
+        ixy="-0.000009121"
+        ixz="0.000003017"
+        iyy="0.002724994"
+        iyz="0.000038741"
+        izz="0.001902354" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1855"
+      rpy="0 0 0" />
+    <parent
+      link="l_baselink" />
+    <child
+      link="l_link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.054"
+      upper="3.054"
+      effort="60"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="l_link2">
+    <inertial>
+      <origin
+        xyz="0.000688 -0.098869 -0.001"
+        rpy="0 0 0" />
+      <mass
+        value="1.774" />
+      <inertia
+        ixx="0.007782080"
+        ixy="-0.000016924"
+        ixz="-0.000000923"
+        iyy="0.002081771"
+        iyz="0.000101593"
+        izz="0.007252211" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_joint2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 -1.5708 0" />
+    <parent
+      link="l_link1" />
+    <child
+      link="l_link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.261"
+      upper="3.054"
+      effort="60"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="l_link3">
+    <inertial>
+      <origin
+        xyz="0.000217 -0.000308 -0.016346"
+        rpy="0 0 0" />
+      <mass
+        value="1.346" />
+      <inertia
+        ixx="0.002702961"
+        ixy="-0.000009675"
+        ixz="-0.000002359"
+        iyy="0.002346715"
+        iyz="-0.000036364"
+        izz="0.001250956" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_joint3"
+    type="revolute">
+    <origin
+      xyz="0 -0.292 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="l_link2" />
+    <child
+      link="l_link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.054"
+      upper="3.054"
+      effort="30"
+      velocity="3.926" />
+  </joint>
+  <link
+    name="l_link4">
+    <inertial>
+      <origin
+        xyz="-000009 0.089133 -0.001106"
+        rpy="0 0 0" />
+      <mass
+        value="1.062" />
+      <inertia
+        ixx="0.003236428"
+        ixy="-0.000000356"
+        ixz="0.000000104"
+        iyy="0.000976517"
+        iyz="-0.000082553"
+        izz="0.002921633" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_joint4"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="l_link3" />
+    <child
+      link="l_link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.832"
+      upper="1.832"
+      effort="30"
+      velocity="3.926" />
+  </joint>
+  <link
+    name="l_link5">
+    <inertial>
+      <origin
+        xyz="-0.000449 -0.000689 -0.086584"
+        rpy="0 0 0" />
+      <mass
+        value="1.027" />
+      <inertia
+        ixx="0.001674281"
+        ixy="-0.000016685"
+        ixz="-0.000028072"
+        iyy="0.001401550"
+        iyz="-0.000009402"
+        izz="0.000909131" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_joint5"
+    type="revolute">
+    <origin
+      xyz="0 0.294 0"
+      rpy="1.5708 1.5708 3.14" />
+    <parent
+      link="l_link4" />
+    <child
+      link="l_link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.967"
+      upper="2.967"
+      effort="10"
+      velocity="3.926" />
+  </joint>
+  <link
+    name="l_link6">
+    <inertial>
+      <origin
+        xyz="-0.000002 -0.000177 0.000105"
+        rpy="0 0 0" />
+      <mass
+        value="0.637" />
+      <inertia
+        ixx="0.000356858"
+        ixy="0.000000059"
+        ixz="-0.000000012"
+        iyy="0.000264812"
+        iyz="-0.000002851"
+        izz="0.000353400" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_joint6"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="l_link5" />
+    <child
+      link="l_link6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.134"
+      upper="0.349"
+      effort="10"
+      velocity="3.926" />
+  </joint>
+  <link
+    name="l_link7">
+    <inertial>
+      <origin
+        xyz="-0.000073 -0.026804 -0.023401"
+        rpy="0 0 0" />
+      <mass
+        value="0.149" />
+      <inertia
+        ixx="0.000200730"
+        ixy="-0.000000322"
+        ixz="0.000000255"
+        iyy="0.000108963"
+        iyz="0.000055610"
+        izz="0.000181009" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_joint7"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="l_link6" />
+    <child
+      link="l_link7" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.745"
+      upper="1.57"
+      effort="10"
+      velocity="3.926" />
+  </joint>
+  <link
+    name="l_link8">
+    <inertial>
+      <origin
+        xyz="0.000104 0.000009 -0.016572"
+        rpy="0 0 0" />
+      <mass
+        value="0.22" />
+      <inertia
+        ixx="0.000090941"
+        ixy="-0.000000052"
+        ixz="0.000000373"
+        iyy="0.000091701"
+        iyz="-0.000000037"
+        izz="0.000115271" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_joint8"
+    type="fixed">
+    <origin
+      xyz="0 -0.105 1.0897E-05"
+      rpy="1.5708 0 0" />
+    <parent
+      link="l_link7" />
+    <child
+      link="l_link8" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="l_link9">
+    <inertial>
+      <origin
+        xyz="4.2744E-15 0.04189 -0.0033223"
+        rpy="0 0 0" />
+      <mass
+        value="0.001" />
+      <inertia
+        ixx="3.5428E-05"
+        ixy="1.5861E-22"
+        ixz="1.3871E-19"
+        iyy="6.2929E-07"
+        iyz="-2.5429E-19"
+        izz="3.5785E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RXL75S-6F-4C/meshes/l_link9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_joint9"
+    type="revolute">
+    <origin
+      xyz="0 -0.022 -0.0382"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="l_link6" />
+    <child
+      link="l_link9" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.134"
+      upper="0.349"
+      effort="10"
+      velocity="3.926" />
+    <mimic joint="l_joint6" multiplier="1"  offset="0"/>
+  </joint>
+</robot>
