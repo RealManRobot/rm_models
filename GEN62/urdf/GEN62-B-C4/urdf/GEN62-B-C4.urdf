@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?><!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter --><robot name="GEN62-B-C4">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.000039 0.000095 0.04945" rpy="0 0 0"/>
+      <mass value="0.878"/>
+      <inertia ixx="0.00067289" ixy="0.000001146" ixz="0.000001607" iyy="0.000675188" iyz="0.000003884" izz="0.000514265"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://GEN62-B-C4/meshes/base_link.STL"/>
+      </geometry>
+      <material name="">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://GEN62-B-C4/meshes/base_link.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_1">
+    <inertial>
+      <origin xyz="-0.000001 -0.021715 -0.030329" rpy="0 0 0"/>
+      <mass value="0.158"/>
+      <inertia ixx="0.000177031" ixy="-2e-9" ixz="8e-9" iyy="0.000156344" iyz="0.000040357" izz="0.000149146"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://GEN62-B-C4/meshes/link_1.STL"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://GEN62-B-C4/meshes/link_1.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_1" type="revolute">
+    <origin xyz="0 0 0.1335" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="link_1"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.01941960595019" upper="3.01941960595019" effort="30" velocity="3.926"/>
+  </joint>
+  <link name="link_2">
+    <inertial>
+      <origin xyz="0.106809 -0.005367 0.000802" rpy="0 0 0"/>
+      <mass value="1.606"/>
+      <inertia ixx="0.001141086" ixy="0.000504522" ixz="-0.000157123" iyy="0.023614423" iyz="0.000015112" izz="0.023683411"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://GEN62-B-C4/meshes/link_2.STL"/>
+      </geometry>
+      <material name="">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://GEN62-B-C4/meshes/link_2.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_2" type="revolute">
+    <origin xyz="0 0.0035 0" rpy="-1.5707963268 -1.3629276129 0"/>
+    <parent link="link_1"/>
+    <child link="link_2"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.7627825445142729" upper="1.7627825445142729" effort="30" velocity="3.926"/>
+  </joint>
+  <link name="link_3">
+    <inertial>
+      <origin xyz="0.14227 -0.002007 -0.023453" rpy="0 0 0"/>
+      <mass value="0.351"/>
+      <inertia ixx="0.000092045" ixy="-0.000027952" ixz="-0.000041321" iyy="0.003332192" iyz="0.000001914" izz="0.003342002"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://GEN62-B-C4/meshes/link_3.STL"/>
+      </geometry>
+      <material name="">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://GEN62-B-C4/meshes/link_3.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_3" type="revolute">
+    <origin xyz="0.26265 0 0" rpy="0 0 -0.2249729406"/>
+    <parent link="link_2"/>
+    <child link="link_3"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.5410520681182421" upper="3.01941960595019" effort="10" velocity="3.926"/>
+  </joint>
+  <link name="link_4">
+    <inertial>
+      <origin xyz="0.024175 -0.028658 -0.001903" rpy="0 0 0"/>
+      <mass value="0.484"/>
+      <inertia ixx="0.000515605" ixy="0.000318535" ixz="-0.000021843" iyy="0.000426209" iyz="0.000025678" izz="0.000796128"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://GEN62-B-C4/meshes/link_4.STL"/>
+      </geometry>
+      <material name="">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://GEN62-B-C4/meshes/link_4.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_4" type="revolute">
+    <origin xyz="0.29004 0 0" rpy="0 0 0.0171042267"/>
+    <parent link="link_3"/>
+    <child link="link_4"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.0297442586766543" upper="1.9373154697137058" effort="3" velocity="3.14"/>
+  </joint>
+  <link name="link_5">
+    <inertial>
+      <origin xyz="-0.000012 0.013448 -0.003731" rpy="0 0 0"/>
+      <mass value="0.23"/>
+      <inertia ixx="0.000093093" ixy="3e-8" ixz="3.9e-8" iyy="0.000070275" iyz="-0.000009091" izz="0.000075946"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://GEN62-B-C4/meshes/link_5.STL"/>
+      </geometry>
+      <material name="">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://GEN62-B-C4/meshes/link_5.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_5" type="revolute">
+    <origin xyz="0.05 0 0" rpy="-0.7853981634 -1.5707963268 -0.7853981634"/>
+    <parent link="link_4"/>
+    <child link="link_5"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.53588974175501" upper="1.53588974175501" effort="3" velocity="3.14"/>
+  </joint>
+  <link name="link_6">
+    <inertial>
+      <origin xyz="0.000052 0.000331 -0.013028" rpy="0 0 0"/>
+      <mass value="0.063"/>
+      <inertia ixx="0.000016117" ixy="2.2e-8" ixz="-3.7e-8" iyy="0.000016051" iyz="-5.3e-8" izz="0.000023052"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://GEN62-B-C4/meshes/link_6.STL"/>
+      </geometry>
+      <material name="">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://GEN62-B-C4/meshes/link_6.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_6" type="revolute">
+    <origin xyz="0 0.063 0" rpy="-1.5707963268 0 0"/>
+    <parent link="link_5"/>
+    <child link="link_6"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-6.283185307179586" upper="6.283185307179586" effort="3" velocity="3.14"/>
+  </joint>
+</robot>
